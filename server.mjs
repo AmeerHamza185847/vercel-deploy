@@ -14,7 +14,7 @@ app.get('/api/users', (req, res) => {
 // Adding users
 app.post('/users', (req, res) => {
     const userData = req.body;
-    res.status(200).send({ message: "User added successfully!", data: userData })
+    res.status(200).json({ message: "User added successfully!", data: userData })
 })
 
 // updating users
